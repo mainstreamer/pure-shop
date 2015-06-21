@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+CATEGORY: {{ get.category }} <br>
+
+Products list:
+{% for value in items[cid] %}
+    <li><a href="/catalogue/{{ get.category }}/{{ value }}">{{ value }}</a></li>
+{% endfor %}
+
+<br>
+<a href="/">MAIN</a><br>
+<a href="/catalogue/">CATALOGUE</a>
+
+</body>
+</html>

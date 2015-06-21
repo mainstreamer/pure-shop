@@ -1,7 +1,14 @@
 <html>
 <head></head>
 <body>
-CATALOGUE: {{ page }}
+{#CATALOGUE: {{ get.page }} <br>#}
+CATALOGUE: {{ get.page }} <br>
+
+{% for key,value in x%}
+    <li><a href="/catalogue/{{ key }}/">{{ key }}</a></li>
+{% endfor %}
+<br>
+{{ electronics }} <br>
 <a href="/">MAIN</a>
 </body>
 </html>

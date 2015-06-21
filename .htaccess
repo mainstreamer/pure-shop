@@ -1,0 +1,9 @@
+ RewriteEngine on
+        #Options +FollowSymlinks
+        RewriteBase /
+        RewriteRule ^(catalogue)/$ index.php?page=$1
+        RewriteRule ^(shop)/item([1-9]+)/$ $1.php?id=$2
+        #RewriteRule ^(.*)shop\.php/(.*)$ $1cgi-bin/shop.cgi?$2
+
+        #http://www.yoursite.com/cgi-bin/shop.cgi?product3
+        #http://www.yoursite.com/shop/product1
